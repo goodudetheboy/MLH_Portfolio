@@ -96,3 +96,13 @@ body {
     font-size: 50px;
     font-weight: 700;
 }
+
+.about {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about .title{
+    margin-top: 5%;
+}
