@@ -70,6 +70,7 @@ body {
         margin-right: auto;
         display: block;        
         padding: 20px;
+        object-fit: contain;
 }
 
 .profile .profile-picture {
