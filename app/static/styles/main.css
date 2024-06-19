@@ -142,3 +142,10 @@ body {
     max-width: 500px;
     width: 100%;
 }
+
+.panel img {
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+
+}

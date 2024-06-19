@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta property="og:title" content="Personal Portfolio" />
+    <meta property="og:description" content="My Personal Portfolio" />
+    <meta property="og:url" content="{{ url }}" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link lang="sass" rel="stylesheet" href="./static/styles/main.css" />
+    <script src="./static/scripts/main.js"></script>
+    <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
+    <title>{{ title }}</title>
+  </head>
+
+  <body>
+    <header class="nav-bar">
+      <div class="nav-content">
+        <a href="/">
+          <div class="nav-logo">
+            <img src="./static/img/logo.svg" />
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <div class="profile">
+      <div id="profile-picture" class="profile-picture">
+        <img src="./static/img/vuong_ho/profile.jpg" />
+      </div>
+      <h1>{{ title }}</h1>
+    </div>
+
+    <div class="about">
+      <h2 class="title"></h2>
+
+      <div class="description">
+        <button class="accordion" onclick="toggle_accordion(this)">
+          About Me
+        </button>
+        <div class="panel">
+          <p>Hey, welcome to my page! My name is Vuong Ho. Want to know more about me?</p>
+          <p>Click on the other sections to find out!</p>
+        </div>
+
+        <button class="accordion" onclick="toggle_accordion(this)">
+          Education
+        </button>
+        <div class="panel">
+          <p>
+            As a grad student at the University of Rochester, I am pursuing a
+            Master's degree in Computer Science, with a passion for machine
+            learning and systems.
+
+          </p>
+        </div>
+
+        <button class="accordion" onclick="toggle_accordion(this)">
+          Work Experience
+        </button>
+        <div class="panel">
+          <p>Site Reliability Engineering Fellow @ MLH Fellowship (Present)</p>
+          <p>Research Assistant @ Rochester Human-Computer Interaction Lab (Present)</p>
+          <p>Co-Founder & Lead Software Engineer @ Startup (2022-2023)</p>
+        </div>
+
+        <button class="accordion" onclick="toggle_accordion(this)">
+          Hobbies
+        </button>
+        <div class="panel">
+          <p>RTS Game (currently playing Ultimate General: Civil War)</p>
+          <img src="./static/img/vuong_ho/hobby_game.png" />
+          <p>Travelling (I have been to 5 countries!)</p>
+          <img src="./static/img/vuong_ho/hobby_travel.png" />
+          <p>Video Games</p>
+          <img src="./static/img/vuong_ho/hobby_cooking.png" />
+        </div>
+
+        <button class="accordion" onclick="toggle_accordion(this)">Map</button>
+        <div class="panel">
+          <p>
+            I am originally from Vietnam, but I have travelled to Japan, Mexico,
+            Cambodia, and currently studying in the United States.
+          </p>
+          <img src="./static/img/vuong_ho/map.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -13,3 +13,7 @@ def index():
 @app.route('/MatthewChang')
 def mc():
     return render_template('mc.html', title="Matthew Chang", url=os.getenv("URL"))
+
+@app.route('/VuongHo')
+def vh():
+    return render_template('vh.html', title="Vuong Ho", url=os.getenv("URL"))
