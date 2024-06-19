@@ -17,3 +17,7 @@ def mc():
 @app.route('/VuongHo')
 def vh():
     return render_template('vh.html', title="Vuong Ho", url=os.getenv("URL"))
+
+@app.route('Hobbies')
+def hobbies():
+    return render_template('hobbies.html', title="Hobbies", url=os.getenv("URL"))
