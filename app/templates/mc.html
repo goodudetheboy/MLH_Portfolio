@@ -27,6 +27,7 @@
     <script src="./static/scripts/main.js"></script>
     <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
     <title>{{ title }}</title>
+    {%import 'entry.html' as item%} {%import 'hobby.html' as hobby%}
   </head>
 
   <body>
@@ -63,31 +64,27 @@
           Education
         </button>
         <div class="panel">
-          <p>
-            I'm a rising junior studying Computer Science at University of
-            California, Irvine. I'm also interested in learning about management
-            and psychology and have taken some classes in both subjects.
-          </p>
+          {{item.entry("I'm a rising junior studying Computer Science at
+          University of California, Irvine. I'm also interested in learning
+          about management and psychology and have taken some classes in both
+          subjects.")}}
         </div>
 
         <button class="accordion" onclick="toggle_accordion(this)">
           Work Experience
         </button>
         <div class="panel">
-          <p>Fullstack Developer @ Commit the Change (2022-)</p>
-          <p>AI Prompt Engineer @ DataAnnotation (2023-)</p>
+          {{item.entry('Fullstack Developer @ Commit the Change (2022-)')}}
+          {{item.entry('AI Prompt Engineer @ DataAnnotation (2023-)')}}
         </div>
 
         <button class="accordion" onclick="toggle_accordion(this)">
           Hobbies
         </button>
         <div class="panel">
-          <p>Reading</p>
-          <img src="./static/img/download (3).jpg" />
-          <p>Working Out</p>
-          <img src="./static/img/download.png" />
-          <p>Video Games</p>
-          <img src="./static/img/download.jpg" />
+          {{hobby.entry('Reading',"./static/img/download (3).jpg")}}
+          {{hobby.entry('Working Out',"./static/img/download.png")}}
+          {{hobby.entry('Video Games',"./static/img/download.jpg")}}
         </div>
 
         <button class="accordion" onclick="toggle_accordion(this)">Map</button>
