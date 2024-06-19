@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"))
+    return render_template('index.html', title="MLH Fellows", url=os.getenv("URL"))
 
 @app.route('/MatthewChang')
 def mc():
@@ -18,6 +18,6 @@ def mc():
 def vh():
     return render_template('vh.html', title="Vuong Ho", url=os.getenv("URL"))
 
-@app.route('Hobbies')
+@app.route('/Hobbies')
 def hobbies():
     return render_template('hobbies.html', title="Hobbies", url=os.getenv("URL"))
