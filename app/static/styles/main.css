@@ -49,6 +49,23 @@ body {
     padding-right: 0px;
 }
 
+#nav-to-fellow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.nav-fellow {
+	display: inline-block;
+	margin-right: 20px;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	width: 200px;
+}
+
 .profile {
     background-color: #1d539f !important;
     text-align: center;

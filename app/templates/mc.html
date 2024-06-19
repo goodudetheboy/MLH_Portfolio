@@ -29,18 +29,10 @@
     <title>{{ title }}</title>
     {%import 'entry.html' as item%} {%import 'hobby.html' as hobby%}
   </head>
+  
+  {% include 'components/header.html' %}
 
   <body>
-    <header class="nav-bar">
-      <div class="nav-content">
-        <a href="/">
-          <div class="nav-logo">
-            <img src="./static/img/logo.svg" />
-          </div>
-        </a>
-      </div>
-    </header>
-
     <div class="profile">
       <div id="profile-picture" class="profile-picture">
         <img src="./static/img/matthew_chang/profile.jpg" />
