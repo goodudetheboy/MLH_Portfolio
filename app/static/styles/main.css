@@ -63,19 +63,20 @@ body {
 }
 
 .profile img {
-        border-radius: 50%;
-        max-width: 100%;
-        max-height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;        
-        padding: 20px;
-        object-fit: contain;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;        
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
 }
 
 .profile .profile-picture {
     margin-bottom: 30px;
-    height: 200px;
 }
 
 .banner {
@@ -107,12 +108,19 @@ body {
     margin-top: 5%;
 }
 
+.description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #eee;
     color: #444;
     cursor: pointer;
     padding: 18px;
+    max-width: 500px;
     width: 100%;
     text-align: center;
     border: none;
@@ -131,4 +139,6 @@ body {
     background-color: white;
     display: none;
     overflow: hidden;
+    max-width: 500px;
+    width: 100%;
 }
