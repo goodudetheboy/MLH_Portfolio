@@ -29,26 +29,34 @@
     <title>{{ title }}</title>
     {%import 'hobby.html' as hobby%}
   </head>
+  {% include 'components/header.html' %}
   <body>
-    <button class="accordion" onclick="toggle_accordion(this)">
-      Matthew's Hobbies
-    </button>
-    <div class="panel">
-      {{hobby.entry('Reading',"./static/img/matthew_chang/hobby_reading.jpg")}}
-      {{hobby.entry('Working
-      Out',"./static/img/matthew_chang/hobby_workout.png")}}
-      {{hobby.entry('Video
-      Games',"./static/img/matthew_chang/hobby_games.jpg")}}
-    </div>
+    <div class="hobbies">
+      <div class="button-click">
+        <button class="accordion" onclick="toggle_accordion(this)">
+          Matthew's Hobbies
+        </button>
+        <div class="panel">
+          {{hobby.entry('Reading',"./static/img/matthew_chang/hobby_reading.jpg")}}
+          {{hobby.entry('Working
+          Out',"./static/img/matthew_chang/hobby_workout.png")}}
+          {{hobby.entry('Video
+          Games',"./static/img/matthew_chang/hobby_games.jpg")}}
+        </div>
+      </div>
 
-    <button class="accordion" onclick="toggle_accordion(this)">
-      Vuong's Hobbies
-    </button>
-    <div class="panel">
-      {{hobby.entry('RTS Game (currently playing Ultimate General: Civil
-      War',"./static/img/vuong_ho/hobby_game.png")}} {{hobby.entry('Travelling
-      (I have been to 5 countries!)',"./static/img/vuong_ho/hobby_travel.png")}}
-      {{hobby.entry('Video Games',"./static/img/vuong_ho/hobby_cooking.png")}}
+      <div class="button-click">
+        <button class="accordion" onclick="toggle_accordion(this)">
+          Vuong's Hobbies
+        </button>
+        <div class="panel">
+          {{hobby.entry('RTS Game (currently playing Ultimate General: Civil
+          War',"./static/img/vuong_ho/hobby_game.png")}}
+          {{hobby.entry('Travelling (I have been to 5
+          countries!)',"./static/img/vuong_ho/hobby_travel.png")}}
+          {{hobby.entry('Cooking',"./static/img/vuong_ho/hobby_cooking.png")}}
+        </div>
+      </div>
     </div>
   </body>
 </html>

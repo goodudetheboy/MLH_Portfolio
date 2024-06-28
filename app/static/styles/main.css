@@ -176,11 +176,10 @@ body {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #4B70F5;
+    color: #eee;
     cursor: pointer;
     padding: 18px;
-    max-width: 500px;
     width: 100%;
     text-align: center;
     border: none;
@@ -190,7 +189,7 @@ body {
   
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #240f69;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -199,13 +198,23 @@ body {
     background-color: white;
     display: none;
     overflow: hidden;
-    max-width: 500px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.panel img {
-	height: 300px;
-	width: 100%;
-	object-fit: cover;
+.panel p {
+	text-align: center;
+    display: flex;
+}
 
+.hobbies {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.button-click {
+    width: 50%;
 }
