@@ -18,17 +18,17 @@
     rel="stylesheet" />
 
   <link lang="sass" rel="stylesheet" href="./static/styles/main.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/md5/3.4.1/md5.min.js"></script>
+  <link lang="sass" rel="stylesheet" href="./static/styles/timeline.css" />
   <script src="./static/scripts/timeline.js" defer></script>
   <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
   <title>{{ title }}</title>
+  {%import 'components/post.html' as post%}
 </head>
 
 {% include 'components/header.html' %}
 
 <body onload="initializeTimeline()">
-  <h1>Timeline</h1>
-  <div id="fuck">Something</div>
+  <h1>Vuong's Timeline</h1>
   <form id="timeline-form" action="/api/timeline_post" method="POST">
     <input type="text" id="name" name="name" placeholder="Your Name" required>
     <input type="email" id="email" name="email" placeholder="Your Email" required>

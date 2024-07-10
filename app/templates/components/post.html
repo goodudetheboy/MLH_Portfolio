@@ -1,0 +1,7 @@
+{%macro entry(name, email, date, gravatarUrl, content)%}
+<img src="${gravatarUrl}" alt="User Gravatar">
+<p><strong>${name}</strong> (${email})</p>
+<small>${date}</small>
+<br>
+<p>${content}</p>
+{%endmacro%}

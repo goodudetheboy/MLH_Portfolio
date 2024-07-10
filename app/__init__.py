@@ -64,10 +64,8 @@ def get_time_line_post():
 		]
 	}
 
-@app.route("/api/timeline_post", methods=["DELETE"])
-def delete_time_line_post():
-	id_to_del = request.form.get("index")
-
-	TimelinePost.delete_by_id(id_to_del)
+@app.route("/api/timeline_post/<int:post_id>", methods=["DELETE"])
+def delete_time_line_post(post_id):
+	TimelinePost.delete_by_id(post_id)
 
 	return {"msg": "Delete successfull" }
