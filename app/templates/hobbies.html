@@ -1,62 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta property="og:title" content="Personal Portfolio" />
-    <meta property="og:description" content="My Personal Portfolio" />
-    <meta property="og:url" content="{{ url }}" />
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta property="og:title" content="Personal Portfolio" />
+  <meta property="og:description" content="My Personal Portfolio" />
+  <meta property="og:url" content="{{ url }}" />
 
-    <link lang="sass" rel="stylesheet" href="./static/styles/main.css" />
-    <script src="./static/scripts/main.js"></script>
-    <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
-    <title>{{ title }}</title>
-    {%import 'hobby.html' as hobby%}
-  </head>
-  {% include 'components/header.html' %}
-  <body>
-    <div class="hobbies">
-      <div class="button-click">
-        <button class="accordion" onclick="toggle_accordion(this)">
-          Matthew's Hobbies
-        </button>
-        <div class="panel">
-          {{hobby.entry('Reading',"./static/img/matthew_chang/hobby_reading.jpg")}}
-          {{hobby.entry('Working
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link lang="sass" rel="stylesheet" href="./static/styles/main.css" />
+  <script src="./static/scripts/main.js"></script>
+  <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
+  <title>{{ title }}</title>
+  {%import 'components/hobby.html' as hobby%}
+</head>
+{% include 'components/header.html' %}
+
+<body>
+  <div class="hobbies">
+    <div class="button-click">
+      <button class="accordion" onclick="toggle_accordion(this)">
+        Matthew's Hobbies
+      </button>
+      <div class="panel">
+        {{hobby.entry('Reading',"./static/img/matthew_chang/hobby_reading.jpg")}}
+        {{hobby.entry('Working
           Out',"./static/img/matthew_chang/hobby_workout.png")}}
-          {{hobby.entry('Video
+        {{hobby.entry('Video
           Games',"./static/img/matthew_chang/hobby_games.jpg")}}
-        </div>
-      </div>
-
-      <div class="button-click">
-        <button class="accordion" onclick="toggle_accordion(this)">
-          Vuong's Hobbies
-        </button>
-        <div class="panel">
-          {{hobby.entry('RTS Game (currently playing Ultimate General: Civil
-          War',"./static/img/vuong_ho/hobby_game.png")}}
-          {{hobby.entry('Travelling (I have been to 5
-          countries!)',"./static/img/vuong_ho/hobby_travel.png")}}
-          {{hobby.entry('Cooking',"./static/img/vuong_ho/hobby_cooking.png")}}
-        </div>
       </div>
     </div>
-  </body>
+
+    <div class="button-click">
+      <button class="accordion" onclick="toggle_accordion(this)">
+        Vuong's Hobbies
+      </button>
+      <div class="panel">
+        {{hobby.entry('RTS Game (currently playing Ultimate General: Civil
+          War',"./static/img/vuong_ho/hobby_game.png")}}
+        {{hobby.entry('Travelling (I have been to 5
+          countries!)',"./static/img/vuong_ho/hobby_travel.png")}}
+        {{hobby.entry('Cooking',"./static/img/vuong_ho/hobby_cooking.png")}}
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
