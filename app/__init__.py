@@ -41,6 +41,10 @@ def vh():
 def hobbies():
 	return render_template("hobbies.html", title="Hobbies", url=os.getenv("URL"))
 
+@app.route("/timeline")
+def timeline():
+	return render_template('timeline.html', title="Vuong's Timeline", url=os.getenv("URL"))
+
 @app.route("/api/timeline_post", methods=["post"])
 def post_time_line_post():
 	name = request.form['name']
@@ -67,4 +71,3 @@ def delete_time_line_post():
 	TimelinePost.delete_by_id(id_to_del)
 
 	return {"msg": "Delete successfull" }
-
