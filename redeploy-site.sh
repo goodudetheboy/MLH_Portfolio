@@ -4,6 +4,8 @@ pkill -f tmux
 
 cd ~/MLH_Portfolio
 
+git fetch && git reset origin/main --hard
+
 python -m venv venv
 
 source venv/bin/activate
