@@ -2,6 +2,7 @@
 
 # Change dir in to MLH Portfolio and fetch branch
 cd ~/MLH_Portfolio
+git fetch && git reset origin/main --hard
 
 # Take down currently running containers
 docker compose -f docker-compose.prod.yml down
