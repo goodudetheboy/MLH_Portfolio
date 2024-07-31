@@ -1,102 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta property="og:title" content="Personal Portfolio" />
-    <meta property="og:description" content="My Personal Portfolio" />
-    <meta property="og:url" content="{{ url }}" />
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta property="og:title" content="Personal Portfolio" />
+  <meta property="og:description" content="My Personal Portfolio" />
+  <meta property="og:url" content="{{ url }}" />
 
-    <link lang="sass" rel="stylesheet" href="./static/styles/main.css" />
-    <script src="./static/scripts/main.js"></script>
-    <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
-    <title>{{ title }}</title>
-  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
 
-  {% include 'components/header.html' %}
+  <link lang="sass" rel="stylesheet" href="./static/styles/main.css" />
+  <script src="./static/scripts/main.js"></script>
+  <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
+  <title>{{ title }}</title>
+</head>
 
-  <body>
-    <div class="profile">
-      <div id="profile-picture" class="profile-picture">
-        <img src="./static/img/vuong_ho/profile.jpg" />
-      </div>
-      <h1>{{ title }}</h1>
+{% include 'components/header.html' %}
+
+<body>
+  <div class="profile">
+    <div id="profile-picture" class="profile-picture">
+      <img src="./static/img/vuong_ho/profile.jpg" />
     </div>
+    <h1>{{ title }}</h1>
+  </div>
 
-    <div class="about">
-      <h2 class="title"></h2>
+  <div class="about">
+    <h2 class="title"></h2>
 
-      <div class="description">
-        <button class="accordion" onclick="toggle_accordion(this)">
-          About Me
-        </button>
-        <div class="panel">
-          <p>
-            Hey, welcome to my page! My name is Vuong Ho. Want to know more
-            about me?
-          </p>
-          <p>Click on the other sections to find out more!</p>
-        </div>
+    <div class="description">
+      <button class="accordion" onclick="toggle_accordion(this)">
+        About Me
+      </button>
+      <div class="panel">
+        <p>
+          Hey, welcome to my page! My name is Vuong Ho. Want to know more
+          about me? Let me take you on a ride for MLH Fellowship.
+        </p>
+        <p>Click on the other sections to find out more!</p>
+      </div>
 
-        <button class="accordion" onclick="toggle_accordion(this)">
-          Education
-        </button>
-        <div class="panel">
-          <p>
-            As a grad student at the University of Rochester, I am pursuing a
-            Master's degree in Computer Science, with a passion for machine
-            learning and systems.
-          </p>
-        </div>
+      <button class="accordion" onclick="toggle_accordion(this)">
+        Education
+      </button>
+      <div class="panel">
+        <p>
+          As a grad student at the University of Rochester, I am pursuing a
+          Master's degree in Computer Science, with a passion for machine
+          learning and systems.
+        </p>
+      </div>
 
-        <button class="accordion" onclick="toggle_accordion(this)">
-          Work Experience
-        </button>
-        <div class="panel">
-          <p>
-            Site Reliability Engineering Fellow @ MLH Fellowship (2024-Present)
-          </p>
-          <p>
-            Research Assistant @ Rochester Human-Computer Interaction Lab
-            (2024-Present)
-          </p>
-          <p>Co-Founder & Lead Software Engineer @ Startup (2022-2023)</p>
-        </div>
+      <button class="accordion" onclick="toggle_accordion(this)">
+        Work Experience
+      </button>
+      <div class="panel">
+        <p>
+          Site Reliability Engineering Fellow @ MLH Fellowship (2024-Present)
+        </p>
+        <p>
+          Research Assistant @ Rochester Human-Computer Interaction Lab
+          (2024-Present)
+        </p>
+        <p>Co-Founder & Lead Software Engineer @ Startup (2022-2023)</p>
+      </div>
 
-        <button class="accordion" onclick="toggle_accordion(this)">Map</button>
-        <div class="panel">
-          <p>
-            I am originally from Vietnam, but I have travelled to Japan, Mexico,
-            Cambodia, and currently studying in the United States.
-          </p>
-          <!-- <img src="./static/img/vuong_ho/map.png" /> -->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93091.59743300895!2d-77.69879836959615!3d43.18615193388704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6b3059614b353%3A0x5a001ffc4125e61e!2sRochester%2C%20NY!5e0!3m2!1sen!2sus!4v1719596961923!5m2!1sen!2sus"
-            width="600"
-            height="250"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+      <button class="accordion" onclick="toggle_accordion(this)">Map</button>
+      <div class="panel">
+        <p>
+          I am originally from Vietnam, but I have travelled to Japan, Mexico,
+          Cambodia, and currently studying in the United States.
+        </p>
+        <!-- <img src="./static/img/vuong_ho/map.png" /> -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93091.59743300895!2d-77.69879836959615!3d43.18615193388704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6b3059614b353%3A0x5a001ffc4125e61e!2sRochester%2C%20NY!5e0!3m2!1sen!2sus!4v1719596961923!5m2!1sen!2sus"
+          width="600" height="250" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
